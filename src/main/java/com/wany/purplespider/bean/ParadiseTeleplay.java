@@ -3,8 +3,13 @@ package com.wany.purplespider.bean;
 
 import java.util.List;
 
+
 public class ParadiseTeleplay {
 
+    /**
+     * 中文名
+     */
+    private String title;
     /**
      * 原名
      */
@@ -74,6 +79,27 @@ public class ParadiseTeleplay {
      * 下一季
      */
     private String nextSeason;
+
+    /**
+     * 海报
+     */
+    private String poster;
+
+    public String getPoster() {
+        return poster;
+    }
+
+    public void setPoster(String poster) {
+        this.poster = poster;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public String getName() {
         return name;
@@ -185,5 +211,27 @@ public class ParadiseTeleplay {
 
     public void setNextSeason(String nextSeason) {
         this.nextSeason = nextSeason;
+    }
+
+    @Override
+    public String toString() {
+        return "ParadiseTeleplay{" +
+                "title='" + title + '\'' +
+                ", name='" + name + '\'' +
+                ", alias='" + alias + '\'' +
+                ", scriptwriter='" + scriptwriter + '\'' +
+                ", director='" + director + '\'' +
+                ", protagonist='" + protagonist + '\'' +
+                ", premiereDate='" + premiereDate + '\'' +
+                ", translate='" + translate + '\'' +
+                ", subClassification=" + subClassification +
+                ", region='" + region + '\'' +
+                ", televisionStation='" + televisionStation + '\'' +
+                ", date='" + date + '\'' +
+                ", runningTime='" + runningTime + '\'' +
+                ", type='" + type + '\'' +
+                ", nextSeason='" + nextSeason + '\'' +
+                ", poster='" + poster + '\'' +
+                '}';
     }
 }

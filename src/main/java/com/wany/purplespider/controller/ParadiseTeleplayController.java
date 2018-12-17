@@ -2,6 +2,7 @@ package com.wany.purplespider.controller;
 
 import com.wany.purplespider.processor.ParadiseTeleplayProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,6 @@ public class ParadiseTeleplayController {
 
     @Autowired
     private ParadiseTeleplayProcessor processor;
-
     @GetMapping("/capture")
     public Object capture() {
         processor.capture();
@@ -23,6 +23,11 @@ public class ParadiseTeleplayController {
     @GetMapping("/capture/{path}")
     public Object capture(@PathVariable String path) {
         processor.capture(path);
+        return "success";
+    }
+
+    @GetMapping("/test")
+    public Object test() {
         return "success";
     }
 }

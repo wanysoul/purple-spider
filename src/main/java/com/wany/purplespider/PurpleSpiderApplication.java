@@ -3,7 +3,7 @@ package com.wany.purplespider;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.wany.purplespider"})
 public class PurpleSpiderApplication {
 
 	public static void main(String[] args) {
