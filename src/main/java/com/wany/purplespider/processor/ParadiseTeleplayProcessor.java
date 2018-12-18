@@ -1,18 +1,14 @@
 package com.wany.purplespider.processor;
 
-import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import com.wany.purplespider.bean.ParadiseTeleplay;
 import com.wany.purplespider.dao.ParadiseTeleplayDao;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
